@@ -1,6 +1,15 @@
 {
   "mode": "UNION",
   "originColumnName": "original_dataset",
+  "selectedColumns": [
+    "DATE_TIME",
+    "PLANT_ID",
+    "SOURCE_KEY",
+    "DC_POWER",
+    "AC_POWER",
+    "DAILY_YIELD",
+    "TOTAL_YIELD"
+  ],
   "engineParams": {
     "hive": {
       "skipPrerunValidate": false,
@@ -54,6 +63,41 @@
     }
   ],
   "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "name": "DATE_TIME",
+            "type": "string"
+          },
+          {
+            "name": "PLANT_ID",
+            "type": "string"
+          },
+          {
+            "name": "SOURCE_KEY",
+            "type": "string"
+          },
+          {
+            "name": "DC_POWER",
+            "type": "double"
+          },
+          {
+            "name": "AC_POWER",
+            "type": "double"
+          },
+          {
+            "name": "DAILY_YIELD",
+            "type": "double"
+          },
+          {
+            "name": "TOTAL_YIELD",
+            "type": "double"
+          }
+        ],
+        "userModified": false
+      }
+    },
     "distinct": false,
     "enabled": false
   },
