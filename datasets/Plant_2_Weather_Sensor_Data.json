@@ -61,11 +61,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "kyshakir@tva.gov"
     },
-    "lastModifiedOn": 1692207075164,
+    "lastModifiedOn": 1692207075325,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -78,12 +78,26 @@
   },
   "tags": [],
   "params": {
-    "uploadBoxId": "8b1519e54e0ba6c9aed9e97b5734bbea6a9f18a7d5c80b2bc78f3e8a84460b31",
     "files": [
       "/Plant_2_Weather_Sensor_Data.csv"
     ],
-    "uploadConnection": "dataiku-managed-storage",
     "uploadFSProviderType": "S3",
+    "uploadedConfig": {
+      "bucket": "gis-data-us-east-1",
+      "metastoreSynchronizationEnabled": true,
+      "metastoreDatabaseName": "default",
+      "metastoreTableName": "${projectKey}_Plant_2_Weather_Sensor_Data",
+      "connection": "dataiku-managed-storage",
+      "path": "/managed-dss-data/uploads/${projectKey}/Plant_2_Weather_Sensor_Data",
+      "notReadyIfEmpty": false,
+      "filesSelectionRules": {
+        "mode": "ALL",
+        "excludeRules": [],
+        "includeRules": [],
+        "explicitFiles": []
+      }
+    },
+    "connection": "dataiku-managed-storage",
     "notReadyIfEmpty": false,
     "previewFile": "/Plant_2_Weather_Sensor_Data.csv",
     "filesSelectionRules": {
