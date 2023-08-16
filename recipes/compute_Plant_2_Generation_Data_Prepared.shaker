@@ -42,7 +42,8 @@
       "params": {
         "outCol": "ParsedDate",
         "formats": [
-          "dd-MM-yyyy HH:mm"
+          "dd-MM-yyyy HH:mm",
+          "yyyy-MM-dd HH:mm:ss"
         ],
         "columns": [
           "DATE_TIME"
