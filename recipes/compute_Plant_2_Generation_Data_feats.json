@@ -15,6 +15,10 @@
         {
           "ref": "Plant_2_Generation_Data",
           "deps": []
+        },
+        {
+          "ref": "Plant_2_Weather_Sensor_Data",
+          "deps": []
         }
       ]
     }
@@ -31,11 +35,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "kyshakir@tva.gov"
     },
-    "lastModifiedOn": 1692207105437,
+    "lastModifiedOn": 1692207177981,
     "extendedProperties": {}
   },
   "creationTag": {

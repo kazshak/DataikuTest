@@ -1,5 +1,70 @@
 {
-  "relationships": [],
+  "relationships": [
+    {
+      "table2": 1,
+      "table1": 0,
+      "type": "ONE_TO_ONE",
+      "on": [
+        {
+          "column1": {
+            "name": "DATE_TIME",
+            "table": 0
+          },
+          "dateDiffUnit": "DAY",
+          "windowFrom": 0,
+          "column2": {
+            "name": "DATE_TIME",
+            "table": 1
+          },
+          "maxMatches": 1,
+          "caseInsensitive": false,
+          "maxDistance": 0,
+          "normalizeText": false,
+          "type": "EQ",
+          "strict": false,
+          "windowTo": 0
+        },
+        {
+          "column1": {
+            "name": "PLANT_ID",
+            "table": 0
+          },
+          "dateDiffUnit": "DAY",
+          "windowFrom": 0,
+          "column2": {
+            "name": "PLANT_ID",
+            "table": 1
+          },
+          "maxMatches": 1,
+          "caseInsensitive": false,
+          "maxDistance": 0,
+          "normalizeText": false,
+          "type": "EQ",
+          "strict": false,
+          "windowTo": 0
+        },
+        {
+          "column1": {
+            "name": "SOURCE_KEY",
+            "table": 0
+          },
+          "dateDiffUnit": "DAY",
+          "windowFrom": 0,
+          "column2": {
+            "name": "SOURCE_KEY",
+            "table": 1
+          },
+          "maxMatches": 1,
+          "caseInsensitive": false,
+          "maxDistance": 0,
+          "normalizeText": false,
+          "type": "EQ",
+          "strict": false,
+          "windowTo": 0
+        }
+      ]
+    }
+  ],
   "features": [
     "COUNT",
     "AVG",
@@ -16,7 +81,9 @@
     "CHARACTER_COUNT",
     "WORD_COUNT"
   ],
-  "cutoffTime": {},
+  "cutoffTime": {
+    "mode": "NONE"
+  },
   "engineParams": {
     "hive": {
       "skipPrerunValidate": false,
@@ -41,7 +108,16 @@
       "readParams": {
         "mode": "AUTO",
         "autoModeRepartitionInto": 10,
-        "map": {}
+        "map": {
+          "Plant_2_Generation_Data": {
+            "cache": false,
+            "repartition": 10
+          },
+          "Plant_2_Weather_Sensor_Data": {
+            "cache": false,
+            "repartition": 10
+          }
+        }
       },
       "overwriteOutputSchema": false,
       "executionEngine": "SPARK_SUBMIT",
@@ -87,6 +163,37 @@
       "timeWindows": [],
       "originLabel": "Plant_2_Generation_Data",
       "index": 0
+    },
+    {
+      "selectedColumns": [
+        {
+          "variableType": "CATEGORY",
+          "name": "DATE_TIME"
+        },
+        {
+          "variableType": "CATEGORY",
+          "name": "PLANT_ID"
+        },
+        {
+          "variableType": "CATEGORY",
+          "name": "SOURCE_KEY"
+        },
+        {
+          "variableType": "NUMERIC",
+          "name": "AMBIENT_TEMPERATURE"
+        },
+        {
+          "variableType": "NUMERIC",
+          "name": "MODULE_TEMPERATURE"
+        },
+        {
+          "variableType": "NUMERIC",
+          "name": "IRRADIATION"
+        }
+      ],
+      "timeWindows": [],
+      "originLabel": "Plant_2_Weather_Sensor_Data",
+      "index": 1
     }
   ]
 }
