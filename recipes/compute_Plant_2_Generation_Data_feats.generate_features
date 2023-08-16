@@ -132,18 +132,6 @@
       "outputColumnsSelectionMode": "MANUAL",
       "selectedColumns": [
         {
-          "variableType": "CATEGORY",
-          "name": "DATE_TIME"
-        },
-        {
-          "variableType": "CATEGORY",
-          "name": "PLANT_ID"
-        },
-        {
-          "variableType": "CATEGORY",
-          "name": "SOURCE_KEY"
-        },
-        {
           "variableType": "NUMERIC",
           "name": "DC_POWER"
         },
@@ -166,18 +154,6 @@
     },
     {
       "selectedColumns": [
-        {
-          "variableType": "CATEGORY",
-          "name": "DATE_TIME"
-        },
-        {
-          "variableType": "CATEGORY",
-          "name": "PLANT_ID"
-        },
-        {
-          "variableType": "CATEGORY",
-          "name": "SOURCE_KEY"
-        },
         {
           "variableType": "NUMERIC",
           "name": "AMBIENT_TEMPERATURE"
