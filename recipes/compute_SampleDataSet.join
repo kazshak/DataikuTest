@@ -4,50 +4,118 @@
       "table2": 1,
       "table1": 0,
       "conditionsMode": "AND",
-      "type": "LEFT",
+      "type": "INNER",
       "outerJoinOnTheLeft": true,
-      "on": []
+      "on": [
+        {
+          "column1": {
+            "name": "DATE_TIME",
+            "table": 0
+          },
+          "dateDiffUnit": "DAY",
+          "windowFrom": 0,
+          "column2": {
+            "name": "DATE_TIME",
+            "table": 1
+          },
+          "maxMatches": 1,
+          "caseInsensitive": false,
+          "maxDistance": 0,
+          "normalizeText": false,
+          "type": "EQ",
+          "strict": false,
+          "windowTo": 0
+        },
+        {
+          "column1": {
+            "name": "PLANT_ID",
+            "table": 0
+          },
+          "dateDiffUnit": "DAY",
+          "windowFrom": 0,
+          "column2": {
+            "name": "PLANT_ID",
+            "table": 1
+          },
+          "maxMatches": 1,
+          "caseInsensitive": false,
+          "maxDistance": 0,
+          "normalizeText": false,
+          "type": "EQ",
+          "strict": false,
+          "windowTo": 0
+        },
+        {
+          "column1": {
+            "name": "SOURCE_KEY",
+            "table": 0
+          },
+          "dateDiffUnit": "DAY",
+          "windowFrom": 0,
+          "column2": {
+            "name": "SOURCE_KEY",
+            "table": 1
+          },
+          "maxMatches": 1,
+          "caseInsensitive": false,
+          "maxDistance": 0,
+          "normalizeText": false,
+          "type": "EQ",
+          "strict": false,
+          "windowTo": 0
+        }
+      ]
     }
   ],
   "selectedColumns": [
     {
       "name": "DATE_TIME",
+      "type": "string",
       "table": 0
     },
     {
       "name": "PLANT_ID",
+      "type": "string",
       "table": 0
     },
     {
       "name": "SOURCE_KEY",
+      "type": "string",
       "table": 0
     },
     {
       "name": "DC_POWER",
+      "type": "double",
       "table": 0
     },
     {
       "name": "AC_POWER",
+      "type": "double",
       "table": 0
     },
     {
       "name": "DAILY_YIELD",
+      "type": "double",
       "table": 0
     },
     {
       "name": "TOTAL_YIELD",
+      "type": "double",
       "table": 0
     },
     {
       "name": "AMBIENT_TEMPERATURE",
+      "type": "double",
       "table": 1
     },
     {
       "name": "MODULE_TEMPERATURE",
+      "type": "double",
       "table": 1
     },
     {
       "name": "IRRADIATION",
+      "type": "double",
       "table": 1
     }
   ],
@@ -88,7 +156,7 @@
   },
   "virtualInputs": [
     {
-      "outputColumnsSelectionMode": "AUTO_NON_CONFLICTING",
+      "outputColumnsSelectionMode": "ALL",
       "preFilter": {
         "distinct": false,
         "enabled": false
@@ -108,5 +176,58 @@
       "computedColumns": []
     }
   ],
+  "computedColumns": [],
+  "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "name": "DATE_TIME",
+            "type": "string",
+            "maxLength": 4194304
+          },
+          {
+            "name": "PLANT_ID",
+            "type": "string",
+            "maxLength": 4194304
+          },
+          {
+            "name": "SOURCE_KEY",
+            "type": "string",
+            "maxLength": 4194304
+          },
+          {
+            "name": "DC_POWER",
+            "type": "double"
+          },
+          {
+            "name": "AC_POWER",
+            "type": "double"
+          },
+          {
+            "name": "DAILY_YIELD",
+            "type": "double"
+          },
+          {
+            "name": "TOTAL_YIELD",
+            "type": "double"
+          },
+          {
+            "name": "AMBIENT_TEMPERATURE",
+            "type": "double"
+          },
+          {
+            "name": "MODULE_TEMPERATURE",
+            "type": "double"
+          },
+          {
+            "name": "IRRADIATION",
+            "type": "double"
+          }
+        ],
+        "userModified": false
+      }
+    }
+  },
   "enableAutoCastInJoinConditions": false
 }
