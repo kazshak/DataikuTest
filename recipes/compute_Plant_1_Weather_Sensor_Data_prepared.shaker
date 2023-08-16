@@ -47,9 +47,9 @@
         "columns": [
           "DATE_TIME"
         ],
-        "timezone_id": "UTC",
+        "timezone_id": "America/New_York",
         "appliesTo": "SINGLE_COLUMN",
-        "lang": "auto"
+        "lang": "en_US"
       },
       "alwaysShowComment": false
     }
