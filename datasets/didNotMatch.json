@@ -29,11 +29,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "kyshakir@tva.gov"
     },
-    "lastModifiedOn": 1692213263267,
+    "lastModifiedOn": 1692213269310,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -62,7 +62,15 @@
     "numPartitions": -1
   },
   "schema": {
-    "columns": [],
+    "columns": [
+      {"name":"DATE_TIME","type":"string","maxLength":4194304},
+      {"name":"PLANT_ID","type":"string","maxLength":4194304},
+      {"name":"SOURCE_KEY","type":"string","maxLength":4194304},
+      {"name":"DC_POWER","type":"double"},
+      {"name":"AC_POWER","type":"double"},
+      {"name":"DAILY_YIELD","type":"double"},
+      {"name":"TOTAL_YIELD","type":"double"}
+    ],
     "userModified": true
   },
   "dkuProperties": [],
