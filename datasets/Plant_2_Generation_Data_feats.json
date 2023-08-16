@@ -29,11 +29,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "kyshakir@tva.gov"
     },
-    "lastModifiedOn": 1692207105435,
+    "lastModifiedOn": 1692207176655,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -69,7 +69,13 @@
       {"name":"DC_POWER","type":"double"},
       {"name":"AC_POWER","type":"double"},
       {"name":"DAILY_YIELD","type":"double"},
-      {"name":"TOTAL_YIELD","type":"double"}
+      {"name":"TOTAL_YIELD","type":"double"},
+      {"name":"PLANT_2_WEATHER_SENSOR_DATA_DATE_TIME","type":"string","comment":"DATE_TIME for each DATE_TIME, PLANT_ID, SOURCE_KEY in Plant_2_Weather_Sensor_Data","maxLength":4194304},
+      {"name":"PLANT_2_WEATHER_SENSOR_DATA_PLANT_ID","type":"string","comment":"PLANT_ID for each DATE_TIME, PLANT_ID, SOURCE_KEY in Plant_2_Weather_Sensor_Data","maxLength":4194304},
+      {"name":"PLANT_2_WEATHER_SENSOR_DATA_SOURCE_KEY","type":"string","comment":"SOURCE_KEY for each DATE_TIME, PLANT_ID, SOURCE_KEY in Plant_2_Weather_Sensor_Data","maxLength":4194304},
+      {"name":"PLANT_2_WEATHER_SENSOR_DATA_AMBIENT_TEMPERATURE","type":"double","comment":"AMBIENT_TEMPERATURE for each DATE_TIME, PLANT_ID, SOURCE_KEY in Plant_2_Weather_Sensor_Data"},
+      {"name":"PLANT_2_WEATHER_SENSOR_DATA_MODULE_TEMPERATURE","type":"double","comment":"MODULE_TEMPERATURE for each DATE_TIME, PLANT_ID, SOURCE_KEY in Plant_2_Weather_Sensor_Data"},
+      {"name":"PLANT_2_WEATHER_SENSOR_DATA_IRRADIATION","type":"double","comment":"IRRADIATION for each DATE_TIME, PLANT_ID, SOURCE_KEY in Plant_2_Weather_Sensor_Data"}
     ],
     "userModified": true
   },
