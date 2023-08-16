@@ -1,0 +1,36 @@
+{
+  "pages": [
+    {
+      "id": "1JcGL6Q",
+      "grid": {
+        "tiles": []
+      },
+      "showTitle": false
+    }
+  ],
+  "owner": "kyshakir@tva.gov",
+  "listed": true,
+  "name": "kshakir_testZip\u0027s default dashboard",
+  "showGrid": true,
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "kyshakir@tva.gov"
+    },
+    "lastModifiedOn": 1692206821307,
+    "extendedProperties": {}
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "kyshakir@tva.gov"
+    },
+    "lastModifiedOn": 1692206821307,
+    "extendedProperties": {}
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}
