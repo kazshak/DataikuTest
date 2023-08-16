@@ -13,7 +13,7 @@
   },
   "preprocessing": {
     "feature_selection_params": {
-      "method": "NONE",
+      "method": "CORRELATION",
       "random_forest_params": {
         "n_trees": 30,
         "depth": 10,
@@ -34,7 +34,7 @@
         "variance_proportion": 0.9
       },
       "correlation_params": {
-        "min_abs_correlation": 0.0,
+        "min_abs_correlation": 0.3,
         "max_abs_correlation": 1.0,
         "n_features": 25
       },
@@ -161,7 +161,7 @@
         "frequency_default_mode": "EXPLICIT",
         "frequency_default_value": 0.0,
         "frequency_normalized": true,
-        "role": "INPUT",
+        "role": "REJECT",
         "type": "CATEGORY",
         "state": {
           "userModified": false,
@@ -287,10 +287,10 @@
     },
     "feature_generation": {
       "pairwise_linear": {
-        "behavior": "DISABLED"
+        "behavior": "ENABLED_MANUAL"
       },
       "polynomial_combinations": {
-        "behavior": "DISABLED"
+        "behavior": "ENABLED_MANUAL"
       },
       "manual_interactions": {
         "interactions": []
@@ -601,7 +601,7 @@
           "scaling": "LINEAR"
         }
       },
-      "enabled": false
+      "enabled": true
     },
     "gbt_classification": {
       "n_estimators": {
@@ -828,7 +828,7 @@
           }
         }
       },
-      "enabled": false
+      "enabled": true
     },
     "decision_tree_classification": {
       "max_depth": {
@@ -938,7 +938,7 @@
           }
         }
       },
-      "enabled": false
+      "enabled": true
     },
     "ridge_regression": {
       "alphaMode": "MANUAL",
@@ -960,7 +960,7 @@
           "scaling": "LOGARITHMIC"
         }
       },
-      "enabled": false
+      "enabled": true
     },
     "lasso_regression": {
       "alphaMode": "AUTO_CV",
@@ -982,11 +982,11 @@
           "scaling": "LOGARITHMIC"
         }
       },
-      "enabled": false
+      "enabled": true
     },
     "leastsquare_regression": {
       "n_jobs": 2,
-      "enabled": false
+      "enabled": true
     },
     "sgd_regression": {
       "epsilon": {
@@ -1050,7 +1050,7 @@
       "max_iter": 1000,
       "tol": 0.001,
       "n_jobs": 2,
-      "enabled": false
+      "enabled": true
     },
     "sgd_classifier": {
       "loss": {
@@ -1121,7 +1121,7 @@
       "algorithm": "auto",
       "p": 2,
       "leaf_size": 30,
-      "enabled": false
+      "enabled": true
     },
     "logistic_regression": {
       "multi_class": "ovr",
@@ -1194,7 +1194,7 @@
       "nesterovs_momentum": true,
       "shuffle": true,
       "learning_rate_init": 0.001,
-      "enabled": false
+      "enabled": true
     },
     "svc_classifier": {
       "C": {
@@ -1328,12 +1328,12 @@
       "coef0": 0.0,
       "tol": 0.001,
       "max_iter": -1,
-      "enabled": false
+      "enabled": true
     },
     "lars_params": {
       "max_features": 0,
       "K": 100,
-      "enabled": false
+      "enabled": true
     },
     "lightgbm_regression": {
       "boosting_type": {
@@ -1889,7 +1889,7 @@
       "seed": 1337,
       "enable_early_stopping": true,
       "early_stopping_rounds": 4,
-      "enabled": false
+      "enabled": true
     },
     "deep_neural_network_regression": {
       "learning_rate": {
@@ -3320,7 +3320,7 @@
     },
     "metrics": {
       "customMetrics": [],
-      "evaluationMetric": "R2",
+      "evaluationMetric": "RMSE",
       "customEvaluationMetricGIB": true,
       "customEvaluationMetricNeedsProba": false,
       "costMatrixWeights": {
@@ -3352,9 +3352,9 @@
         "enabled": false,
         "rules": []
       },
-      "samplingMethod": "HEAD_SEQUENTIAL",
+      "samplingMethod": "RANDOM_FIXED_RATIO",
       "maxRecords": 100000,
-      "targetRatio": 0.02,
+      "targetRatio": 0.8,
       "ascending": true,
       "withinFirstN": -1,
       "maxReadUncompressedBytes": -1
@@ -3365,7 +3365,49 @@
     "ssdSeed": 1337,
     "testOnLargerValues": true,
     "streamAll": false,
-    "kfold": false,
+    "efsdTrain": {
+      "selection": {
+        "useMemTable": false,
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "partitionSelectionMethod": "ALL",
+        "latestPartitionsN": 1,
+        "ordering": {
+          "enabled": false,
+          "rules": []
+        },
+        "samplingMethod": "RANDOM_FIXED_RATIO",
+        "maxRecords": 100000,
+        "targetRatio": 0.8,
+        "ascending": true,
+        "withinFirstN": -1,
+        "maxReadUncompressedBytes": -1
+      }
+    },
+    "efsdTest": {
+      "selection": {
+        "useMemTable": false,
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "partitionSelectionMethod": "ALL",
+        "latestPartitionsN": 1,
+        "ordering": {
+          "enabled": false,
+          "rules": []
+        },
+        "samplingMethod": "RANDOM_FIXED_RATIO",
+        "maxRecords": 100000,
+        "targetRatio": 0.2,
+        "ascending": true,
+        "withinFirstN": -1,
+        "maxReadUncompressedBytes": -1
+      }
+    },
+    "kfold": true,
     "nFolds": 5,
     "instanceIdRefresher": 0,
     "subSamplingSeed": 1337
