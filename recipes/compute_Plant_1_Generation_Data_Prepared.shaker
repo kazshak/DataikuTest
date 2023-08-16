@@ -42,8 +42,7 @@
       "params": {
         "outCol": "ParsedDate",
         "formats": [
-          "yyyy-MM-dd hh:mm:ss",
-          "yyyy-MM-dd HH:mm:ss"
+          "dd-MM-yyyy HH:mm"
         ],
         "columns": [
           "DATE_TIME"
@@ -98,12 +97,16 @@
   "columnWidthsByName": {
     "ParsedDate": 100,
     "IRRADIATION": 162,
+    "TOTAL_YIELD": 134,
     "AMBIENT_TEMPERATURE": 183,
     "SOURCE_KEY": 120,
+    "DAILY_YIELD": 134,
     "PLANT_ID": 106,
     "MODULE_TEMPERATURE": 176,
     "DATE_TIME": 148,
-    "DA": 100
+    "DA": 100,
+    "AC_POWER": 134,
+    "DC_POWER": 134
   },
   "sorting": [],
   "globalSearchQuery": "",
