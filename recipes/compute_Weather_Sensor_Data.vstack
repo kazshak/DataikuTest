@@ -1,6 +1,14 @@
 {
   "mode": "UNION",
   "originColumnName": "original_dataset",
+  "selectedColumns": [
+    "DATE_TIME",
+    "PLANT_ID",
+    "SOURCE_KEY",
+    "AMBIENT_TEMPERATURE",
+    "MODULE_TEMPERATURE",
+    "IRRADIATION"
+  ],
   "engineParams": {
     "hive": {
       "skipPrerunValidate": false,
@@ -54,6 +62,37 @@
     }
   ],
   "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "name": "DATE_TIME",
+            "type": "string"
+          },
+          {
+            "name": "PLANT_ID",
+            "type": "string"
+          },
+          {
+            "name": "SOURCE_KEY",
+            "type": "string"
+          },
+          {
+            "name": "AMBIENT_TEMPERATURE",
+            "type": "double"
+          },
+          {
+            "name": "MODULE_TEMPERATURE",
+            "type": "double"
+          },
+          {
+            "name": "IRRADIATION",
+            "type": "double"
+          }
+        ],
+        "userModified": false
+      }
+    },
     "distinct": false,
     "enabled": false
   },
