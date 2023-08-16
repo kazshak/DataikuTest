@@ -66,18 +66,14 @@
     }
   ],
   "features": [
-    "COUNT",
-    "AVG",
-    "MAX",
-    "MIN",
-    "SUM",
-    "DISTINCT",
-    "DAY_OF_MONTH",
     "DAY_OF_WEEK",
     "MONTH_OF_YEAR",
     "HOUR_OF_DAY",
     "WEEK_OF_YEAR",
-    "YEAR",
+    "AVG",
+    "MAX",
+    "MIN",
+    "SUM",
     "CHARACTER_COUNT",
     "WORD_COUNT"
   ],
