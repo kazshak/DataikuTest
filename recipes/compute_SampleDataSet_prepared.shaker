@@ -29,8 +29,24 @@
   },
   "explorationFilters": [],
   "columnUseScientificNotationByName": {},
-  "exploreUIParams": {},
-  "steps": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "DateComponentsExtractor",
+      "params": {
+        "outYearColumn": "Year",
+        "column": "DATE_TIME",
+        "timezone_id": "UTC"
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
@@ -61,7 +77,19 @@
       "meaning": "Date"
     }
   },
-  "columnWidthsByName": {},
+  "columnWidthsByName": {
+    "TOTAL_YIELD": 155,
+    "IRRADIATION": 162,
+    "AMBIENT_TEMPERATURE": 183,
+    "Year": 100,
+    "SOURCE_KEY": 120,
+    "DAILY_YIELD": 148,
+    "PLANT_ID": 106,
+    "MODULE_TEMPERATURE": 176,
+    "DATE_TIME": 148,
+    "AC_POWER": 134,
+    "DC_POWER": 134
+  },
   "sorting": [],
   "globalSearchQuery": "",
   "coloring": {
