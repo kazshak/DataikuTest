@@ -9,13 +9,13 @@
       "on": [
         {
           "column1": {
-            "name": "DATE_TIME",
+            "name": "PLANT_ID",
             "table": 0
           },
           "dateDiffUnit": "DAY",
           "windowFrom": 0,
           "column2": {
-            "name": "DATE_TIME",
+            "name": "PLANT_ID",
             "table": 1
           },
           "maxMatches": 1,
@@ -28,32 +28,20 @@
         },
         {
           "column1": {
-            "name": "PLANT_ID",
+            "name": "ParsedDate",
             "table": 0
           },
-          "dateDiffUnit": "DAY",
-          "windowFrom": 0,
+          "dateDiffUnit": "SECOND",
           "column2": {
-            "name": "PLANT_ID",
+            "name": "ParsedDate",
             "table": 1
           },
-          "maxMatches": 1,
-          "caseInsensitive": false,
-          "maxDistance": 0,
-          "normalizeText": false,
-          "type": "EQ",
-          "strict": false,
-          "windowTo": 0
+          "type": "EQ"
         }
       ]
     }
   ],
   "selectedColumns": [
-    {
-      "name": "DATE_TIME",
-      "type": "string",
-      "table": 0
-    },
     {
       "name": "PLANT_ID",
       "type": "string",
@@ -163,9 +151,8 @@
       "schema": {
         "columns": [
           {
-            "name": "DATE_TIME",
-            "type": "string",
-            "maxLength": 4194304
+            "name": "ParsedDate",
+            "type": "date"
           },
           {
             "name": "PLANT_ID",
