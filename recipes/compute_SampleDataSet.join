@@ -44,25 +44,6 @@
           "type": "EQ",
           "strict": false,
           "windowTo": 0
-        },
-        {
-          "column1": {
-            "name": "SOURCE_KEY",
-            "table": 0
-          },
-          "dateDiffUnit": "DAY",
-          "windowFrom": 0,
-          "column2": {
-            "name": "SOURCE_KEY",
-            "table": 1
-          },
-          "maxMatches": 1,
-          "caseInsensitive": false,
-          "maxDistance": 0,
-          "normalizeText": false,
-          "type": "EQ",
-          "strict": false,
-          "windowTo": 0
         }
       ]
     }
