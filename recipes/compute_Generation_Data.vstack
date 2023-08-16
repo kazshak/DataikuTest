@@ -2,7 +2,7 @@
   "mode": "UNION",
   "originColumnName": "original_dataset",
   "selectedColumns": [
-    "DATE_TIME",
+    "ParsedDate",
     "PLANT_ID",
     "SOURCE_KEY",
     "DC_POWER",
@@ -46,19 +46,13 @@
   },
   "virtualInputs": [
     {
-      "preFilter": {
-        "distinct": false,
-        "enabled": false
-      },
-      "originLabel": "Plant_1_Generation_Data",
+      "preFilter": {},
+      "originLabel": "Plant_1_Generation_Data_Prepared",
       "index": 0
     },
     {
-      "preFilter": {
-        "distinct": false,
-        "enabled": false
-      },
-      "originLabel": "Plant_2_Generation_Data",
+      "preFilter": {},
+      "originLabel": "Plant_2_Generation_Data_Prepared",
       "index": 1
     }
   ],
@@ -67,16 +61,18 @@
       "schema": {
         "columns": [
           {
-            "name": "DATE_TIME",
-            "type": "string"
+            "name": "ParsedDate",
+            "type": "date"
           },
           {
             "name": "PLANT_ID",
-            "type": "string"
+            "type": "string",
+            "maxLength": 4194304
           },
           {
             "name": "SOURCE_KEY",
-            "type": "string"
+            "type": "string",
+            "maxLength": 4194304
           },
           {
             "name": "DC_POWER",
