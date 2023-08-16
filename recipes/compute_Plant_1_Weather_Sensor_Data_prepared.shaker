@@ -29,8 +29,31 @@
   },
   "explorationFilters": [],
   "columnUseScientificNotationByName": {},
-  "exploreUIParams": {},
-  "steps": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "DateParser",
+      "params": {
+        "outCol": "ParsedDate",
+        "formats": [
+          "yyyy-MM-dd hh:mm:ss"
+        ],
+        "columns": [
+          "DATE_TIME"
+        ],
+        "timezone_id": "UTC",
+        "appliesTo": "SINGLE_COLUMN",
+        "lang": "auto"
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
@@ -57,7 +80,16 @@
     "autoRefreshSample": false
   },
   "analysisColumnData": {},
-  "columnWidthsByName": {},
+  "columnWidthsByName": {
+    "ParsedDate": 100,
+    "IRRADIATION": 162,
+    "AMBIENT_TEMPERATURE": 183,
+    "SOURCE_KEY": 120,
+    "PLANT_ID": 106,
+    "MODULE_TEMPERATURE": 176,
+    "DATE_TIME": 148,
+    "DA": 100
+  },
   "sorting": [],
   "globalSearchQuery": "",
   "coloring": {
