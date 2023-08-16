@@ -13,11 +13,11 @@
     "main": {
       "items": [
         {
-          "ref": "Plant_1_Weather_Sensor_Data",
+          "ref": "Plant_1_Weather_Sensor_Data_prepared",
           "deps": []
         },
         {
-          "ref": "Plant_2_Weather_Sensor_Data",
+          "ref": "Plant_2_Weather_Sensor_Data_Prepared",
           "deps": []
         }
       ]
@@ -35,11 +35,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "kyshakir@tva.gov"
     },
-    "lastModifiedOn": 1692212559674,
+    "lastModifiedOn": 1692221068205,
     "extendedProperties": {}
   },
   "creationTag": {

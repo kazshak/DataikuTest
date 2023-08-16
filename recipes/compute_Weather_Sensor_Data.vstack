@@ -2,7 +2,7 @@
   "mode": "UNION",
   "originColumnName": "original_dataset",
   "selectedColumns": [
-    "DATE_TIME",
+    "ParsedDate",
     "PLANT_ID",
     "SOURCE_KEY",
     "AMBIENT_TEMPERATURE",
@@ -45,19 +45,13 @@
   },
   "virtualInputs": [
     {
-      "preFilter": {
-        "distinct": false,
-        "enabled": false
-      },
-      "originLabel": "Plant_1_Weather_Sensor_Data",
+      "preFilter": {},
+      "originLabel": "Plant_1_Weather_Sensor_Data_prepared",
       "index": 0
     },
     {
-      "preFilter": {
-        "distinct": false,
-        "enabled": false
-      },
-      "originLabel": "Plant_2_Weather_Sensor_Data",
+      "preFilter": {},
+      "originLabel": "Plant_2_Weather_Sensor_Data_Prepared",
       "index": 1
     }
   ],
@@ -66,16 +60,18 @@
       "schema": {
         "columns": [
           {
-            "name": "DATE_TIME",
-            "type": "string"
+            "name": "ParsedDate",
+            "type": "date"
           },
           {
             "name": "PLANT_ID",
-            "type": "string"
+            "type": "string",
+            "maxLength": 4194304
           },
           {
             "name": "SOURCE_KEY",
-            "type": "string"
+            "type": "string",
+            "maxLength": 4194304
           },
           {
             "name": "AMBIENT_TEMPERATURE",
