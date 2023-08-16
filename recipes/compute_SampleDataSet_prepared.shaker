@@ -40,9 +40,10 @@
       "disabled": false,
       "type": "DateComponentsExtractor",
       "params": {
+        "outYearColumn": "YearExtracted",
         "column": "DATE_TIME",
         "timezone_id": "UTC",
-        "outWeekOfYearColumn": "WeekOfYear"
+        "outWeekOfYearColumn": ""
       },
       "alwaysShowComment": false
     }
@@ -83,6 +84,7 @@
     "PLANT_ID": 106,
     "MODULE_TEMPERATURE": 176,
     "DATE_TIME": 148,
+    "YearExtracted": 113,
     "AC_POWER": 134,
     "DC_POWER": 134
   },
