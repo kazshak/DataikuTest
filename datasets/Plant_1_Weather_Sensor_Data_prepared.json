@@ -29,11 +29,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "kyshakir@tva.gov"
     },
-    "lastModifiedOn": 1692215712084,
+    "lastModifiedOn": 1692215830746,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -64,6 +64,7 @@
   "schema": {
     "columns": [
       {"name":"DATE_TIME","type":"string","maxLength":4194304},
+      {"name":"ParsedDate","type":"date"},
       {"name":"PLANT_ID","type":"string","maxLength":4194304},
       {"name":"SOURCE_KEY","type":"string","maxLength":4194304},
       {"name":"AMBIENT_TEMPERATURE","type":"double"},
