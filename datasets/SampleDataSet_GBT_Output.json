@@ -29,11 +29,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "kyshakir@tva.gov"
     },
-    "lastModifiedOn": 1692279876479,
+    "lastModifiedOn": 1692279895673,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -62,7 +62,23 @@
     "numPartitions": -1
   },
   "schema": {
-    "columns": [],
+    "columns": [
+      {"name":"ParsedDate","type":"date"},
+      {"name":"PLANT_ID","type":"bigint"},
+      {"name":"SOURCE_KEY","type":"string","maxLength":4194304},
+      {"name":"DC_POWER","type":"double"},
+      {"name":"AC_POWER","type":"double"},
+      {"name":"DAILY_YIELD","type":"double"},
+      {"name":"TOTAL_YIELD","type":"double"},
+      {"name":"AMBIENT_TEMPERATURE","type":"double"},
+      {"name":"MODULE_TEMPERATURE","type":"double"},
+      {"name":"IRRADIATION","type":"double"},
+      {"name":"prediction","type":"float"},
+      {"name":"error","type":"double"},
+      {"name":"error_decile","type":"smallint"},
+      {"name":"abs_error_decile","type":"smallint"},
+      {"name":"relative_error","type":"double"}
+    ],
     "userModified": true
   },
   "dkuProperties": [],
