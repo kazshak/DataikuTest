@@ -9,8 +9,8 @@
             "box": {
               "top": 0,
               "left": 0,
-              "width": 3,
-              "height": 3
+              "width": 12,
+              "height": 6
             },
             "clickAction": "DO_NOTHING",
             "tileParams": {
@@ -33,11 +33,11 @@
   "name": "kshakir_testZip\u0027s default dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "kyshakir@tva.gov"
     },
-    "lastModifiedOn": 1692283995099,
+    "lastModifiedOn": 1692284035202,
     "extendedProperties": {}
   },
   "creationTag": {
