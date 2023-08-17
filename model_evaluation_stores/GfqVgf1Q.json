@@ -71,20 +71,45 @@
     "dimensions": []
   },
   "displayParams": {
+    "displayedMetrics": [
+      "EVS",
+      "MAPE",
+      "MAE",
+      "MSE",
+      "RMSE",
+      "RMSLE",
+      "R2",
+      "PEARSON",
+      "DATA_DRIFT",
+      "DATA_DRIFT_PVALUE",
+      "MIN_KS",
+      "MAX_PSI",
+      "PREDICTION_DRIFT_PSI",
+      "PREDICTION_DRIFT_KS"
+    ],
+    "predictionType": "REGRESSION",
     "pinnedMetrics": [],
+    "xLabel": "evaluation:date",
     "yLabels": [],
     "alsoDisplayedLabels": [],
+    "barLabels": [
+      "evaluation:date",
+      "model:name",
+      "evaluationDataset:dataset-name"
+    ],
+    "graphStyle": "BAR",
+    "sortColumn": "refStr",
     "sortDescending": false,
     "showConfidenceIntervals": true,
     "disabledMERunIds": []
   },
   "governSyncOptOut": false,
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 4,
     "lastModifiedBy": {
       "login": "kyshakir@tva.gov"
     },
-    "lastModifiedOn": 1692279892738,
+    "lastModifiedOn": 1692280313906,
     "extendedProperties": {}
   },
   "creationTag": {
