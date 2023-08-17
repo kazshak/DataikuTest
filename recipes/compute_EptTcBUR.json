@@ -3,7 +3,16 @@
   "neverRecomputeExistingPartitions": false,
   "optionalDependencies": false,
   "params": {
-    "customConfig": {},
+    "customConfig": {
+      "algorithm": "faiss",
+      "expert": false,
+      "annoy_metric": "angular",
+      "annoy_num_trees": 10,
+      "faiss_index_type": "IndexFlatL2",
+      "faiss_lsh_num_bits": 16,
+      "feature_columns": [],
+      "unique_id_column": "SOURCE_KEY"
+    },
     "containerSelection": {
       "containerMode": "INHERIT"
     }
@@ -37,11 +46,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "kyshakir@tva.gov"
     },
-    "lastModifiedOn": 1692288729263,
+    "lastModifiedOn": 1692288756603,
     "extendedProperties": {}
   },
   "creationTag": {
