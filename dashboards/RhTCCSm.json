@@ -18,6 +18,7 @@
             },
             "autoLoad": true,
             "showTitle": "NO",
+            "borderColor": "",
             "insightId": "VKzeFxD",
             "insightType": "web_app",
             "displayMode": "INSIGHT",
@@ -33,11 +34,11 @@
   "name": "kshakir_testZip\u0027s default dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 4,
     "lastModifiedBy": {
       "login": "kyshakir@tva.gov"
     },
-    "lastModifiedOn": 1692284035202,
+    "lastModifiedOn": 1692284111208,
     "extendedProperties": {}
   },
   "creationTag": {
