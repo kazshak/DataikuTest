@@ -1,0 +1,60 @@
+{
+  "type": "CustomCode_similarity-search-index",
+  "neverRecomputeExistingPartitions": false,
+  "optionalDependencies": false,
+  "params": {
+    "customConfig": {},
+    "containerSelection": {
+      "containerMode": "INHERIT"
+    }
+  },
+  "customMeta": {
+    "kv": {}
+  },
+  "redispatchPartitioning": false,
+  "maxRunningActivities": 0,
+  "variables": {},
+  "dkuProperties": [],
+  "inputs": {
+    "input_dataset": {
+      "items": [
+        {
+          "ref": "SampleDataSet",
+          "deps": []
+        }
+      ]
+    }
+  },
+  "outputs": {
+    "index_folder": {
+      "items": [
+        {
+          "ref": "EptTcBUR",
+          "appendMode": false
+        }
+      ]
+    }
+  },
+  "labels": [],
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "kyshakir@tva.gov"
+    },
+    "lastModifiedOn": 1692288729263,
+    "extendedProperties": {}
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "kyshakir@tva.gov"
+    },
+    "lastModifiedOn": 1692288729263,
+    "extendedProperties": {}
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}
