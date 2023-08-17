@@ -90,7 +90,10 @@
     "predictionType": "REGRESSION",
     "pinnedMetrics": [],
     "xLabel": "evaluation:date",
-    "yLabels": [],
+    "yLabels": [
+      "model:name",
+      "evaluationDataset:dataset-name"
+    ],
     "alsoDisplayedLabels": [],
     "barLabels": [
       "evaluation:date",
@@ -105,11 +108,11 @@
   },
   "governSyncOptOut": false,
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "kyshakir@tva.gov"
     },
-    "lastModifiedOn": 1692280313906,
+    "lastModifiedOn": 1692283239514,
     "extendedProperties": {}
   },
   "creationTag": {
