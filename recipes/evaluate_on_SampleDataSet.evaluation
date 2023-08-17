@@ -18,7 +18,7 @@
   "dataDriftColumnHandling": {},
   "customMetrics": [],
   "useGPU": false,
-  "assignmentThreshold": 0.0,
+  "assignmentThreshold": 0,
   "keptInputColumns": [],
   "gpuAllowGrowth": false,
   "treatDataDriftColumnHandling": false,
@@ -30,7 +30,7 @@
   "computePropensity": false,
   "forceOriginalEngine": false,
   "possibleCustomMetrics": [],
-  "treatmentRatio": 0.0,
+  "treatmentRatio": 0,
   "individualExplanationParams": {
     "drawInScoredSet": false,
     "subChunkSize": 5000,
@@ -38,7 +38,7 @@
     "shapleyBackgroundSize": 100,
     "nbExplanations": 3
   },
-  "forcedClassifierThreshold": 0.0,
+  "forcedClassifierThreshold": 0,
   "sparkParams": {
     "pipelineAllowMerge": true,
     "sparkPreparedDFStorageLevel": "MEMORY_AND_DISK",
@@ -75,9 +75,9 @@
     },
     "withinFirstN": -1,
     "partitionSelectionMethod": "ALL",
-    "targetRatio": 0.02,
+    "targetRatio": 0.15,
     "maxReadUncompressedBytes": -1,
-    "samplingMethod": "FULL",
+    "samplingMethod": "RANDOM_FIXED_RATIO",
     "ascending": true
   },
   "computeAssertions": false,
