@@ -1,0 +1,32 @@
+{
+  "type": "web_app",
+  "params": {
+    "webAppSmartId": "nRJpyCV",
+    "webAppType": "SHINY"
+  },
+  "owner": "kyshakir@tva.gov",
+  "listed": false,
+  "name": "PairsVisual",
+  "dashboardCreationId": "RhTCCSm",
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "kyshakir@tva.gov"
+    },
+    "lastModifiedOn": 1692283993449,
+    "extendedProperties": {}
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "kyshakir@tva.gov"
+    },
+    "lastModifiedOn": 1692283993449,
+    "extendedProperties": {}
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}
