@@ -30,16 +30,449 @@
     "type": "worksheet_root",
     "confidenceLevel": 0.95,
     "showConfidenceInterval": false,
-    "cards": [],
+    "cards": [
+      {
+        "type": "bivariate_header",
+        "yColumn": {
+          "name": "AC_POWER",
+          "type": "CONTINUOUS"
+        },
+        "showMosaicPlot": true,
+        "showHistogram": true,
+        "showScatterPlot": true,
+        "showFrequencyTable": false,
+        "showBoxPlot": false,
+        "showSummary": false,
+        "xColumns": [
+          {
+            "name": "DC_POWER",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "DAILY_YIELD",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "TOTAL_YIELD",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "AMBIENT_TEMPERATURE",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "MODULE_TEMPERATURE",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "IRRADIATION",
+            "type": "CONTINUOUS"
+          }
+        ],
+        "cards": [
+          {
+            "type": "column_card",
+            "column": {
+              "name": "DC_POWER",
+              "type": "CONTINUOUS"
+            },
+            "cards": [
+              {
+                "type": "scatter_plot",
+                "symbolSize": 4,
+                "maxNumberOfPoints": 100000,
+                "showTrend": false,
+                "xColumn": {
+                  "name": "DC_POWER",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "AC_POWER",
+                  "type": "CONTINUOUS"
+                },
+                "id": "Gax7rIE"
+              },
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "DC_POWER",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "AC_POWER",
+                  "type": "CONTINUOUS"
+                },
+                "id": "6Am8mtk"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "DC_POWER",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "AC_POWER",
+                  "type": "CONTINUOUS"
+                },
+                "id": "w3882AZ"
+              }
+            ],
+            "id": "oZhG0CR"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "DAILY_YIELD",
+              "type": "CONTINUOUS"
+            },
+            "cards": [
+              {
+                "type": "scatter_plot",
+                "symbolSize": 4,
+                "maxNumberOfPoints": 100000,
+                "showTrend": false,
+                "xColumn": {
+                  "name": "DAILY_YIELD",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "AC_POWER",
+                  "type": "CONTINUOUS"
+                },
+                "id": "DGNOUeJ"
+              },
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "DAILY_YIELD",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "AC_POWER",
+                  "type": "CONTINUOUS"
+                },
+                "id": "LpOkdJw"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "DAILY_YIELD",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "AC_POWER",
+                  "type": "CONTINUOUS"
+                },
+                "id": "vR0E3ND"
+              }
+            ],
+            "id": "3qdvN42"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "TOTAL_YIELD",
+              "type": "CONTINUOUS"
+            },
+            "cards": [
+              {
+                "type": "scatter_plot",
+                "symbolSize": 4,
+                "maxNumberOfPoints": 100000,
+                "showTrend": false,
+                "xColumn": {
+                  "name": "TOTAL_YIELD",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "AC_POWER",
+                  "type": "CONTINUOUS"
+                },
+                "id": "k5oRuTD"
+              },
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "TOTAL_YIELD",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "AC_POWER",
+                  "type": "CONTINUOUS"
+                },
+                "id": "aY9rXdQ"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "TOTAL_YIELD",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "AC_POWER",
+                  "type": "CONTINUOUS"
+                },
+                "id": "WBAHqQJ"
+              }
+            ],
+            "id": "tLLCles"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "AMBIENT_TEMPERATURE",
+              "type": "CONTINUOUS"
+            },
+            "cards": [
+              {
+                "type": "scatter_plot",
+                "symbolSize": 4,
+                "maxNumberOfPoints": 100000,
+                "showTrend": false,
+                "xColumn": {
+                  "name": "AMBIENT_TEMPERATURE",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "AC_POWER",
+                  "type": "CONTINUOUS"
+                },
+                "id": "6xUszRP"
+              },
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "AMBIENT_TEMPERATURE",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "AC_POWER",
+                  "type": "CONTINUOUS"
+                },
+                "id": "EO371q1"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "AMBIENT_TEMPERATURE",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "AC_POWER",
+                  "type": "CONTINUOUS"
+                },
+                "id": "a7zhW6y"
+              }
+            ],
+            "id": "5YSHGJN"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "MODULE_TEMPERATURE",
+              "type": "CONTINUOUS"
+            },
+            "cards": [
+              {
+                "type": "scatter_plot",
+                "symbolSize": 4,
+                "maxNumberOfPoints": 100000,
+                "showTrend": false,
+                "xColumn": {
+                  "name": "MODULE_TEMPERATURE",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "AC_POWER",
+                  "type": "CONTINUOUS"
+                },
+                "id": "Xp96FtS"
+              },
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "MODULE_TEMPERATURE",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "AC_POWER",
+                  "type": "CONTINUOUS"
+                },
+                "id": "PFayQMN"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "MODULE_TEMPERATURE",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "AC_POWER",
+                  "type": "CONTINUOUS"
+                },
+                "id": "MlSMo9v"
+              }
+            ],
+            "id": "5bYhGE9"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "IRRADIATION",
+              "type": "CONTINUOUS"
+            },
+            "cards": [
+              {
+                "type": "scatter_plot",
+                "symbolSize": 4,
+                "maxNumberOfPoints": 100000,
+                "showTrend": false,
+                "xColumn": {
+                  "name": "IRRADIATION",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "AC_POWER",
+                  "type": "CONTINUOUS"
+                },
+                "id": "ehTM4eT"
+              },
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "IRRADIATION",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "AC_POWER",
+                  "type": "CONTINUOUS"
+                },
+                "id": "rjPpbWz"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "IRRADIATION",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "AC_POWER",
+                  "type": "CONTINUOUS"
+                },
+                "id": "ZsV7jfb"
+              }
+            ],
+            "id": "0p9QzWR"
+          }
+        ],
+        "id": "6q8CQoC"
+      }
+    ],
     "id": "XkTRKbQ"
   },
   "name": "Worksheet",
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "kyshakir@tva.gov"
     },
-    "lastModifiedOn": 1692306979482,
+    "lastModifiedOn": 1692307060396,
     "extendedProperties": {}
   },
   "creationTag": {
