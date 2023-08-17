@@ -1,4 +1,5 @@
 library(shiny)
+library(dataiku)
 
 # Define server logic required to draw a histogram
 shinyServer(function(input, output) {
@@ -10,11 +11,14 @@ shinyServer(function(input, output) {
   #     when inputs change
   #  2) Its output type is a plot
 
+  mydataset <- dkuReadDataset("SampleDataSet", samplingMethod="head", nbRows=100000)
+  varstoplot <- c('DC_POWER', 'AC_POWER', 'DAILY_YIELD', 'TOTAL_YIELD', 'AMBIENT_TEMPERATURE', 'MODULE_TEMPERATURE', 'IRRADIATION')
   output$distPlot <- renderPlot({
-    x    <- faithful[, 2]  # Old Faithful Geyser data
-    bins <- seq(min(x), max(x), length.out = input$bins + 1)
+    # x    <- faithful[, 2]  # Old Faithful Geyser data
+    # bins <- seq(min(x), max(x), length.out = input$bins + 1)
 
     # draw the histogram with the specified number of bins
-    hist(x, breaks = bins, col = 'darkgray', border = 'white')
+    # hist(x, breaks = bins, col = 'darkgray', border = 'white')
+      pairs(mydataset[,varstoplot])
   })
 })
