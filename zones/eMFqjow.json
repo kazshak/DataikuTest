@@ -1,7 +1,16 @@
 {
   "name": "Eval Zone",
   "color": "#8C2DA7",
-  "items": [],
+  "items": [
+    {
+      "objectId": "train_TOTAL_YIELD__Gradient_Boosted_Trees__",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "JKxAERbl",
+      "objectType": "SAVED_MODEL"
+    }
+  ],
   "shared": [],
   "tags": [],
   "customFields": {},
