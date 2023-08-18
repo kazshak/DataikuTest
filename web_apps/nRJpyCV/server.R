@@ -1,6 +1,6 @@
 library(shiny)
 library(dataiku)
-mydataset <- dkuReadDataset("SampleDataSet", samplingMethod="head", nbRows=100000)
+mydataset <- dkuReadDataset("SampleDataSet_clustered_MainCluster_prepared", samplingMethod="head", nbRows=100000)
 varstoplot <- c('DC_POWER', 'AC_POWER', 'DAILY_YIELD', 'TOTAL_YIELD', 'AMBIENT_TEMPERATURE', 'MODULE_TEMPERATURE', 'IRRADIATION')
 
 # Define server logic required to draw a histogram
