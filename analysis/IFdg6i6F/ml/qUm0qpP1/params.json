@@ -28,7 +28,7 @@
           "HOUR",
           "WEEK"
         ],
-        "role": "INPUT",
+        "role": "REJECT",
         "type": "NUMERIC",
         "state": {
           "userModified": false,
