@@ -29,11 +29,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "kyshakir@tva.gov"
     },
-    "lastModifiedOn": 1692393291366,
+    "lastModifiedOn": 1692393315920,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -72,8 +72,7 @@
       {"name":"TOTAL_YIELD","type":"double"},
       {"name":"AMBIENT_TEMPERATURE","type":"double"},
       {"name":"MODULE_TEMPERATURE","type":"double"},
-      {"name":"IRRADIATION","type":"double"},
-      {"name":"cluster_labels","type":"string","maxLength":4194304}
+      {"name":"IRRADIATION","type":"double"}
     ],
     "userModified": true
   },
