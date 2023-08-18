@@ -7,7 +7,7 @@
       {
         "input": "cluster_labels",
         "col": "SOURCE_KEY",
-        "string": "0",
+        "string": "cluster_0",
         "$showList": false,
         "num": 0,
         "operator": "\u003d\u003d [string]"
