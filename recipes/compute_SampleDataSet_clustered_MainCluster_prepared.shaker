@@ -29,8 +29,26 @@
   },
   "explorationFilters": [],
   "columnUseScientificNotationByName": {},
-  "exploreUIParams": {},
-  "steps": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsSelector",
+      "params": {
+        "columns": [
+          "cluster_labels"
+        ],
+        "keep": false,
+        "appliesTo": "SINGLE_COLUMN"
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
@@ -57,7 +75,19 @@
     "autoRefreshSample": false
   },
   "analysisColumnData": {},
-  "columnWidthsByName": {},
+  "columnWidthsByName": {
+    "ParsedDate": 120,
+    "TOTAL_YIELD": 127,
+    "IRRADIATION": 127,
+    "cluster_labels": 148,
+    "AMBIENT_TEMPERATURE": 183,
+    "SOURCE_KEY": 120,
+    "DAILY_YIELD": 127,
+    "PLANT_ID": 106,
+    "MODULE_TEMPERATURE": 176,
+    "AC_POWER": 106,
+    "DC_POWER": 106
+  },
   "sorting": [],
   "globalSearchQuery": "",
   "coloring": {
