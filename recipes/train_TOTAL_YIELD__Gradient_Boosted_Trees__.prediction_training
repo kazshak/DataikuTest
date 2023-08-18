@@ -48,7 +48,7 @@
         ],
         "limit": {
           "min": 1.0E-23,
-          "max": 1.0
+          "max": 1
         },
         "range": {
           "scaling": "LINEAR",
@@ -98,7 +98,7 @@
         ],
         "limit": {
           "min": 1.0E-23,
-          "max": 1.0
+          "max": 1
         },
         "range": {
           "scaling": "LINEAR",
@@ -130,9 +130,9 @@
       "customEvaluationMetricGIB": true,
       "costMatrixWeights": {
         "fpGain": -0.3,
-        "tpGain": 1.0,
-        "fnGain": 0.0,
-        "tnGain": 0.0
+        "tpGain": 1,
+        "fnGain": 0,
+        "tnGain": 0
       },
       "liftPoint": 0.4,
       "evaluationMetric": "RMSE",
@@ -141,7 +141,7 @@
       "customMetrics": []
     },
     "autoOptimizeThreshold": true,
-    "forcedClassifierThreshold": 0.0,
+    "forcedClassifierThreshold": 0,
     "grid_search_params": {
       "grouped": false,
       "bayesianOptimizer": "SCIKIT_OPTIMIZE",
@@ -169,7 +169,7 @@
   "generatingModelId": "A-KSHAKIR_TESTZIP-VkegfJvm-mkOFJIdm-s1-pp8-m1",
   "preprocessing": {
     "reduce": {
-      "kept_variance": 0.0,
+      "kept_variance": 0,
       "enabled": false
     },
     "target_remapping": [],
@@ -179,7 +179,7 @@
         "role": "INPUT",
         "sendToInput": "main",
         "customHandlingCode": "",
-        "binarize_constant_threshold": 0.0,
+        "binarize_constant_threshold": 0,
         "type": "NUMERIC",
         "binarize_threshold_mode": "MEDIAN",
         "datetime_cyclical_periods": [
@@ -198,13 +198,13 @@
           "recordedMeaning": "Date",
           "userModified": false
         },
-        "impute_constant_value": 0.0
+        "impute_constant_value": 0
       },
       "TOTAL_YIELD": {
         "role": "TARGET",
         "sendToInput": "main",
         "customHandlingCode": "",
-        "binarize_constant_threshold": 0.0,
+        "binarize_constant_threshold": 0,
         "type": "NUMERIC",
         "binarize_threshold_mode": "MEDIAN",
         "datetime_cyclical_periods": [],
@@ -217,7 +217,7 @@
           "recordedMeaning": "DoubleMeaning",
           "userModified": false
         },
-        "impute_constant_value": 0.0
+        "impute_constant_value": 0
       },
       "IRRADIATION": {
         "rescaling": "AVGSTD",
@@ -225,7 +225,7 @@
         "role": "INPUT",
         "sendToInput": "main",
         "customHandlingCode": "",
-        "binarize_constant_threshold": 0.0,
+        "binarize_constant_threshold": 0,
         "type": "NUMERIC",
         "binarize_threshold_mode": "MEDIAN",
         "datetime_cyclical_periods": [],
@@ -240,7 +240,7 @@
           "recordedMeaning": "DoubleMeaning",
           "userModified": false
         },
-        "impute_constant_value": 0.0
+        "impute_constant_value": 0
       },
       "AMBIENT_TEMPERATURE": {
         "rescaling": "AVGSTD",
@@ -248,7 +248,7 @@
         "role": "INPUT",
         "sendToInput": "main",
         "customHandlingCode": "",
-        "binarize_constant_threshold": 0.0,
+        "binarize_constant_threshold": 0,
         "type": "NUMERIC",
         "binarize_threshold_mode": "MEDIAN",
         "datetime_cyclical_periods": [],
@@ -263,7 +263,7 @@
           "recordedMeaning": "DoubleMeaning",
           "userModified": false
         },
-        "impute_constant_value": 0.0
+        "impute_constant_value": 0
       },
       "SOURCE_KEY": {
         "nb_bins_hashing": 1048576,
@@ -278,7 +278,7 @@
         "type": "CATEGORY",
         "impact_kfold": true,
         "missing_handling": "NONE",
-        "frequency_default_value": 0.0,
+        "frequency_default_value": 0,
         "impact_kfold_seed": 1337,
         "state": {
           "autoModifiedByDSS": false,
@@ -306,7 +306,7 @@
         "role": "INPUT",
         "sendToInput": "main",
         "customHandlingCode": "",
-        "binarize_constant_threshold": 0.0,
+        "binarize_constant_threshold": 0,
         "type": "NUMERIC",
         "binarize_threshold_mode": "MEDIAN",
         "datetime_cyclical_periods": [],
@@ -321,13 +321,13 @@
           "recordedMeaning": "DoubleMeaning",
           "userModified": false
         },
-        "impute_constant_value": 0.0
+        "impute_constant_value": 0
       },
       "PLANT_ID": {
         "role": "REJECT",
         "sendToInput": "main",
         "customHandlingCode": "",
-        "binarize_constant_threshold": 0.0,
+        "binarize_constant_threshold": 0,
         "type": "NUMERIC",
         "binarize_threshold_mode": "MEDIAN",
         "datetime_cyclical_periods": [],
@@ -341,7 +341,7 @@
           "recordedMeaning": "LongMeaning",
           "userModified": false
         },
-        "impute_constant_value": 0.0
+        "impute_constant_value": 0
       },
       "MODULE_TEMPERATURE": {
         "rescaling": "AVGSTD",
@@ -349,7 +349,7 @@
         "role": "INPUT",
         "sendToInput": "main",
         "customHandlingCode": "",
-        "binarize_constant_threshold": 0.0,
+        "binarize_constant_threshold": 0,
         "type": "NUMERIC",
         "binarize_threshold_mode": "MEDIAN",
         "datetime_cyclical_periods": [],
@@ -364,7 +364,7 @@
           "recordedMeaning": "DoubleMeaning",
           "userModified": false
         },
-        "impute_constant_value": 0.0
+        "impute_constant_value": 0
       },
       "AC_POWER": {
         "rescaling": "AVGSTD",
@@ -372,7 +372,7 @@
         "role": "INPUT",
         "sendToInput": "main",
         "customHandlingCode": "",
-        "binarize_constant_threshold": 0.0,
+        "binarize_constant_threshold": 0,
         "type": "NUMERIC",
         "binarize_threshold_mode": "MEDIAN",
         "datetime_cyclical_periods": [],
@@ -387,7 +387,7 @@
           "recordedMeaning": "DoubleMeaning",
           "userModified": false
         },
-        "impute_constant_value": 0.0
+        "impute_constant_value": 0
       },
       "DC_POWER": {
         "rescaling": "AVGSTD",
@@ -395,7 +395,7 @@
         "role": "INPUT",
         "sendToInput": "main",
         "customHandlingCode": "",
-        "binarize_constant_threshold": 0.0,
+        "binarize_constant_threshold": 0,
         "type": "NUMERIC",
         "binarize_threshold_mode": "MEDIAN",
         "datetime_cyclical_periods": [],
@@ -410,7 +410,7 @@
           "recordedMeaning": "DoubleMeaning",
           "userModified": false
         },
-        "impute_constant_value": 0.0
+        "impute_constant_value": 0
       }
     },
     "skipPreprocessing": false,
@@ -436,7 +436,7 @@
         "behavior": "ENABLED_MANUAL"
       }
     },
-    "preprocessingFitSampleRatio": 1.0,
+    "preprocessingFitSampleRatio": 1,
     "preprocessingFitSampleSeed": 1337,
     "feature_selection_params": {
       "pca_params": {
@@ -449,16 +449,16 @@
       "method": "CORRELATION",
       "correlation_params": {
         "min_abs_correlation": 0.3,
-        "max_abs_correlation": 1.0,
+        "max_abs_correlation": 1,
         "n_features": 25
       },
       "lasso_params": {
         "alpha": [
           0.01,
           0.1,
-          1.0,
-          10.0,
-          100.0
+          1,
+          10,
+          100
         ],
         "cross_validate": true
       },
