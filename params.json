@@ -54,7 +54,20 @@
     "gitCommitMode": "AUTO",
     "disableAutomaticTriggers": false,
     "integrations": {
-      "integrations": []
+      "integrations": [
+        {
+          "active": true,
+          "hook": {
+            "type": "github",
+            "configuration": {
+              "useProxy": true,
+              "username": "kazshak",
+              "accessToken": "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",
+              "repository": "kazshak / DataikuTest"
+            }
+          }
+        }
+      ]
     },
     "flowBuildSettings": {
       "mergeSparkPipelines": false,
@@ -225,11 +238,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 7,
+    "versionNumber": 8,
     "lastModifiedBy": {
       "login": "kyshakir@tva.gov"
     },
-    "lastModifiedOn": 1692291752829,
+    "lastModifiedOn": 1692726995295,
     "extendedProperties": {}
   },
   "creationTag": {
