@@ -62,7 +62,7 @@
             "configuration": {
               "useProxy": true,
               "username": "kazshak",
-              "accessToken": "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",
+              "accessToken": "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",
               "repository": "kazshak/DataikuTest"
             }
           }
@@ -238,11 +238,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 9,
+    "versionNumber": 10,
     "lastModifiedBy": {
       "login": "kyshakir@tva.gov"
     },
-    "lastModifiedOn": 1692741717103,
+    "lastModifiedOn": 1692742881492,
     "extendedProperties": {}
   },
   "creationTag": {
