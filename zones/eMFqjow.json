@@ -25,6 +25,14 @@
     {
       "objectId": "SampleDataSet_GBT_Metrics",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "SampleDataSet_clustered_MainCluster_prepared_LightGBM",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "score_SampleDataSet_clustered_MainCluster_prepared",
+      "objectType": "RECIPE"
     }
   ],
   "shared": [],
